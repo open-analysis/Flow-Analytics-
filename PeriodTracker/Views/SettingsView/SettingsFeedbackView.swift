@@ -46,6 +46,13 @@ struct SettingsFeedbackView: View {
             }
             .buttonStyle(.borderedProminent)
             .buttonBorderShape(.roundedRectangle)
+            Button("Support - Github") {
+                if let url = URL(string: "https://github.com/open-analysis/Flow-Analytics/blob/main/README.md") {
+                    openURL(url)
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.roundedRectangle)
             Spacer()
         }
     }
